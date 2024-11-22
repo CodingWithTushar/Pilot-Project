@@ -1,5 +1,5 @@
 public with sharing class AccountController {
-    
+    // This method is fetching data
     @AuraEnabled(cacheable=true)
     public static List<Account> getAccounts(){
         try {
