@@ -1,0 +1,18 @@
+<template>
+    <lightning-card icon-name="standard:account" variant="base">
+      
+        <lightning-button 
+          label="Add" 
+          onclick={handleClick} 
+        ></lightning-button>
+
+      <lightning-datatable
+        data={dataForTable}
+        columns = {columns}
+        key-field="Id"
+        onrowaction={handleRowAction}
+      >
+
+      </lightning-datatable>
+    </lightning-card>
+</template>
